@@ -5,13 +5,13 @@
 class Orch < Formula
   desc "Inspect CLI tools and uninstall them through the package manager that owns them"
   homepage "https://github.com/tassan/orch"
-  version "0.1.3"
+  version "0.1.4"
   license "PolyForm-Noncommercial-1.0.0"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/tassan/orch/releases/download/v0.1.3/orch_0.1.3_darwin_amd64.tar.gz"
-    sha256 "ac9ed2ac479e3f09e4b97bda9597cfdac73faeba43a3e71b1465ce5c35837def"
+    url "https://github.com/tassan/orch/releases/download/v0.1.4/orch_0.1.4_darwin_amd64.tar.gz"
+    sha256 "5777e94dbaf14fa6dcc1b979bce8ec28edfbbdc92ec09e9b71dd573f7d96152f"
 
     define_method(:install) do
       bin.install "orch"
@@ -22,8 +22,8 @@ class Orch < Formula
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/tassan/orch/releases/download/v0.1.3/orch_0.1.3_darwin_arm64.tar.gz"
-    sha256 "d181fe38d34c5126704d1e068e8ce7aa94cf9ebf305c3d2dda7bb3faf3f44148"
+    url "https://github.com/tassan/orch/releases/download/v0.1.4/orch_0.1.4_darwin_arm64.tar.gz"
+    sha256 "7c9ab4240eaf0db1348b38a2d3f813f3c9cb2934731a9b0190ac87b7b0b81abb"
 
     define_method(:install) do
       bin.install "orch"
